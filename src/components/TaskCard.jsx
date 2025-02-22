@@ -2,7 +2,6 @@ import { useState } from 'react'
 import useTaskContext from '../contexts/TaskContext'
 
 function TaskCard({ taskID, taskName, isChecked }) {
-  // const [isEditable,setIsEditable] = useState(true)
 
   const [newTodo, setNewTodo] = useState(taskName)
 
@@ -15,7 +14,7 @@ function TaskCard({ taskID, taskName, isChecked }) {
   }
 
   const editTask = () => {
-    // setUpdateTaskHidden(false)
+
     updateTasks(taskID,newTodo)
   }
 
